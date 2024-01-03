@@ -1,0 +1,62 @@
+.tl_mm-btn {
+  padding: 10px 20px;
+  font-size: 14px;
+  font-weight: 600;
+  text-align: center;
+  white-space: nowrap;
+  border-radius: 6px;
+  line-height: 100%;
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
+  font-family: "Open Sans";
+  transition: 0.8s;
+}
+.tl_mm-btn:active {
+  transform: scale(0.9);
+}
+.tl_mm-btn--inline {
+  display: inline-flex;
+  align-items: center;
+  font-size: 14px;
+  padding: 12px 24px;
+  background-color: #5EBF88;
+  color: #fff;
+  line-height: normal;
+  border-radius: 8px;
+  font-weight: 600;
+  border: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  text-align: center;
+  justify-content: center;
+  cursor: pointer;
+  white-space: normal;
+}
+.tl_mm-btn--inline:hover {
+  background-color: #0768B3;
+  color: #fff;
+}
+.tl_mm-btn--secondary {
+  display: inline-flex;
+  align-items: center;
+  font-size: 14px;
+  padding: 12px 24px;
+  line-height: normal;
+  border-radius: 3px;
+  font-weight: 700;
+  text-decoration: none;
+  box-sizing: border-box;
+  text-align: center;
+  justify-content: center;
+  cursor: pointer;
+  background: #fff;
+  border: 1px solid #021647;
+  padding: 11px 30px;
+  color: #021647;
+}
+.tl_mm-btn--secondary:hover {
+  background-color: transparent;
+  color: #0768B3;
+  border: 1px solid #0768B3;
+}/*# sourceMappingURL=buttons.css.map */

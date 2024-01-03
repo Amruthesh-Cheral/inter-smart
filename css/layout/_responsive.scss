@@ -1,0 +1,149 @@
+@include mobile {
+    .tl_mm-header {
+        &__mobile-view {
+            display: block;
+        }
+        &__desktop-view {
+            display: none;
+        }
+        &__menu-name {
+            justify-content: center;
+        }
+    }
+
+    .tl_mm-our-story {
+        &__main {
+            margin-top: 60px;
+        }
+        &__row {
+            flex-direction: column;
+        }
+        &__left,
+        &__right {
+            max-width: 100%;
+        }
+    }
+    .tl_mm-welcome {
+        &__row {
+            flex-direction: column;
+        }
+        &__box {
+            margin: 20px 0 !important;
+        }
+        &__div {
+            &.boxes {
+                width: 100%;
+                margin: 0;
+            }
+            &.center {
+                display: none;
+            }
+        }
+    }
+    .tl_mm-banner {
+        &__sub-own-trips-menu-wrap {
+            flex-direction: column;
+        }
+        &__sub-own-item {
+            border-radius: 15px;
+            width: 100% !important;
+        }
+        &__slider {
+            height: 236px;
+        }
+        &__banner-content {
+            h4 {
+                font-size: 29px;
+            }
+        }
+        &__controls {
+            text-align: center;
+            width: 100%;
+            position: sticky;
+            a {
+                color: $black;
+            }
+        }
+        &__main-content {
+            position: sticky;
+            opacity: 0;
+        }
+        &__sub-own-trips {
+            position: static;
+        }
+    }
+    .tl_mm-holiday-package{
+        &__row{
+            flex-wrap: wrap;
+        }
+        &__item-wrap{
+            width: 100%;
+        }
+        h4{
+            font-size: 12px;
+        }
+    }
+    .tl_mm-travel-story{
+        &__left-content{
+            font-size: 31px;
+        }
+        &__wrapper{
+            height: 100%;
+        }
+    }
+}
+@include tablet {
+    .tl_mm-header {
+        display: none;
+    }
+    .tl_mm-banner{
+        &__main-content{
+            top: 12%;
+        }
+        &__sub-own-trips-menu{
+            margin-top: -82px;
+        }
+    }
+
+    .tl_mm-welcome {
+        &__div {
+            &.center {
+                display: none;
+            }
+            &.boxes {
+                width: 100%;
+                margin: 0 20px;
+            }
+        }
+        &__box {
+            margin: 10px 0 !important;
+        }
+    }
+    .tl_mm-our-story {
+        &__main {
+            margin-top: 33px;
+        }
+        &__right {
+            img {
+                height: 400px;
+            }
+        }
+    }
+    .tl_mm-holiday-package{
+        &__row{
+            flex-wrap: wrap;
+        }
+        h4{
+            font-size: 12px;
+        }
+
+    }
+    .tl_mm-travel-story{
+        &__left-content{
+            font-size: 31px;
+        }
+        &__wrapper{
+            height: 100%;
+        }
+    }
+}

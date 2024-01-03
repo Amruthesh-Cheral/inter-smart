@@ -1,0 +1,68 @@
+@import "../abstracts/variable";
+
+.tl_mm-btn {
+  padding: 10px 20px;
+  font-size: 14px;
+  font-weight: $font-weight-semi;
+  text-align: center;
+  white-space: nowrap;
+  border-radius: 6px;
+  line-height: 100%;
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
+  font-family: $primary-font;
+  transition: 0.8s;
+
+  &:active {
+    transform: scale(0.9);
+  }
+
+  &--inline {
+    display: inline-flex;
+    align-items: center;
+    font-size: 14px;
+    padding: 12px 24px;
+    background-color: $secondary-green;
+    color: $white;
+    line-height: normal;
+    border-radius: 8px;
+    font-weight: 600;
+    border: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    text-align: center;
+    justify-content: center;
+    cursor: pointer;
+    white-space: normal;
+    &:hover {
+      background-color: $secondary-blue;
+      color: $white;
+    }
+  }
+
+  &--secondary {
+    display: inline-flex;
+    align-items: center;
+    font-size: 14px;
+    padding: 12px 24px;
+    line-height: normal;
+    border-radius: 3px;
+    font-weight: 700;
+    text-decoration: none;
+    box-sizing: border-box;
+    text-align: center;
+    justify-content: center;
+    cursor: pointer;
+    background: $white;
+    border: 1px solid $primary-color;
+    padding: 11px 30px;
+    color: $primary-color;
+
+    &:hover {
+      background-color: transparent;
+      color: $secondary-blue;
+      border: 1px solid $secondary-blue;
+    }
+  }
+}

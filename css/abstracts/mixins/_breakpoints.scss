@@ -1,0 +1,29 @@
+// Mixins
+// // Breakpoints.
+$bp-mobile: 767px;
+$bp-tablet: 1024px;
+$bp-desktop: 1280px;
+
+// Breakpoints
+
+// Mobile only css. @media(max-width: 767px)
+@mixin mobile {
+    @media (max-width: ($bp-mobile - 0.02)) {
+      @content;
+    }
+  }
+  
+  // Tablet only css. @media(min-width: 600px) and (max-width: 1024px)
+  @mixin tablet {
+    @media (min-width: ($bp-mobile - 0.02)) and (max-width: ($bp-tablet - 0.02)) {
+      @content;
+    }
+  }
+  
+  // for internet explorer
+  @mixin ie-browser {
+    @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+      @content;
+    }
+  }
+  

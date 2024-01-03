@@ -1,0 +1,135 @@
+@font-face {
+    font-family: 'Bayshore';
+    src: url('Bayshore.woff2') format('woff2'),
+        url('Bayshore.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Bayshore';
+    src: url('Bayshore.woff2') format('woff2'),
+        url('Bayshore.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'AdUSans Bd';
+    src: url('AdUSans-Bd.woff2') format('woff2'),
+        url('AdUSans-Bd.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'AdUSans Bd';
+    src: url('AdUSans-Bd.woff2') format('woff2'),
+        url('AdUSans-Bd.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Verlag';
+    src: url('Verlag-Black.woff2') format('woff2'),
+        url('Verlag-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Verlag';
+    src: url('Verlag-BlackItalic.woff2') format('woff2'),
+        url('Verlag-BlackItalic.woff') format('woff');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Verlag';
+    src: url('Verlag-BoldItalic.woff2') format('woff2'),
+        url('Verlag-BoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Verlag Book';
+    src: url('Verlag-Book.woff2') format('woff2'),
+        url('Verlag-Book.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Verlag';
+    src: url('Verlag-Light.woff2') format('woff2'),
+        url('Verlag-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Verlag Book';
+    src: url('Verlag-BookItalic.woff2') format('woff2'),
+        url('Verlag-BookItalic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Verlag';
+    src: url('Verlag-LightItalic.woff2') format('woff2'),
+        url('Verlag-LightItalic.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Verlag XLight';
+    src: url('Verlag-XLight.woff2') format('woff2'),
+        url('Verlag-XLight.woff') format('woff');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Verlag XLight';
+    src: url('Verlag-XLightItalic.woff2') format('woff2'),
+        url('Verlag-XLightItalic.woff') format('woff');
+    font-weight: 200;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Verlag';
+    src: url('Verlag-LightItalic.woff2') format('woff2'),
+        url('Verlag-LightItalic.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'TerminaW00-Demi';
+    src: url('TerminaW00-Demi.woff2') format('woff2'),
+        url('TerminaW00-Demi.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+

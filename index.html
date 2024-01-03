@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/common.css" />
+    <link rel="stylesheet" href="./css/fonts.css" />
+    <link rel="icon" type="image/x-icon" href="./images/fav.png">
+    <title> Travel Momories | Home Page </title>
+
+  </head>
+  <body class="scroll-box">
+    <!-- LOADER -->
+      <div class="loader" id="loader">
+        <div class="loader__wrap"> </div>
+      </div>
+    <!-- LOADER -->
+    <!-- HEADER SECTION -->
+    <header class="tl_mm-header">
+      <div class="tl_mm-header__desktop-view">
+        <div class="tl_mm-header__top-head">Luxury Tours and Tailor-Made Holidays by Travel Memories</div>
+        <div class="tl_mm-header">
+          <div class="tl_mm-header__main-menu container">
+
+            <div class="tl_mm-header__menu-name">
+              <div class="tl_mm-header__menu-logo">
+                <img class="tl_mm-header__logo uncolor-logo" src="./images/logo-1.svg" alt="logo" />
+                <img class="tl_mm-header__logo color-logo" src="./images/logo-1.svg" alt="logo" />
+              </div>
+            </div>
+
+            <div class="tl_mm-header__menu-name ">
+              <div class="tl_mm-header__menu-name">
+                <div class="tl_mm-header__menu-title"><p>Holiday Packages</p> 
+                </div>
+                <div class="tl_mm-header__menu-title"> <p>Group Tours</p> 
+  
+                </div>
+                <div class="tl_mm-header__menu-title"><p>Travel Themes</p></div>
+                <div class="tl_mm-header__menu-title"><p>Cruises </p></div>
+                <div class="tl_mm-header__menu-title"> <p>Our Story</p> </div>
+                <div class="tl_mm-header__menu-title"> <p>Contact us</p> </div>
+                <div class="tl_mm-header__menu-title"> <p><span> <img src="./images/search.svg" alt=""></span></p> </div>
+                <div class="tl_mm-header__menu-title"> <p><span><img src="./images/menu.svg" alt=""></span></p> </div>
+              </div>
+              <div class="tl_mm-header__last-btn">
+                <div class="tl_mm-header__menu-title">  <p> <span><img src="./images/account.svg" alt=""></span> Member Log In</p></div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="tl_mm-header__mobile-view">
+        <div class="container">
+
+          <div class="tl_mm-header__menu-name">
+            <div class="tl_mm-header__menu-logo">
+              <img class="tl_mm-header__logo uncolor-logo" src="./images/logo-1.svg" alt="logo" />
+              <img class="tl_mm-header__logo color-logo" src="./images/logo-1.svg" alt="logo" />
+            </div>
+            <div class="tl_mm-header__menu-title"> <p><span> <img src="./images/search.svg" alt=""></span></p> </div>
+            <div class="tl_mm-header__menu-title" onclick="menuClick()"> <p><span><img src="./images/menu.svg" alt=""></span></p> </div>
+          </div>
+        </div>
+
+        <div class="tl_mm-header__sub-mobile-menu" id="mobileSubmenu">
+          <div class="tl_mm-header__menu-name tl_mm-header--mobile-menu-name">
+            <div class="tl_mm-header__menu-title"><p>Holiday Packages</p> 
+            </div>
+            <div class="tl_mm-header__menu-title"> <p>Group Tours</p> 
+
+            </div>
+            <div class="tl_mm-header__menu-title"><p>Travel Themes</p></div>
+            <div class="tl_mm-header__menu-title"><p>Cruises </p></div>
+            <div class="tl_mm-header__menu-title"> <p>Our Story</p> </div>
+            <div class="tl_mm-header__menu-title"> <p>Contact us</p> </div>
+          </div>
+        </div>
+
+      </div>
+    </header>
+    <!-- HEADER SECTION -->
+
+    <!-- BANNER SECTION -->
+    <section class="tl_mm-banner">
+        <div class="tl_mm-banner__main-wrap">
+          <div class="tl_mm-banner__slider">
+            <div class="tl_mm-banner__slide active">
+              <img src="./images/banner.jpg" width="100%">
+            </div>
+            <div class="tl_mm-banner__slide next">
+              <img src="./images/banner2.jpg" width="100%">
+            </div>
+            <div class="tl_mm-banner__slide">
+              <img src="./images/banner3.jpg" width="100%">
+            </div>
+            <div class="tl_mm-banner__slide">
+              <img src="./images/banner.jpg" width="100%">
+            </div>
+            <div class="tl_mm-banner__slide prev">
+              <img src="./images/banner2.jpg" width="100%">
+            </div>
+          </div>
+
+          <div class="tl_mm-banner__controls">
+            <a href="#" id="click-left">&#8592;</a>
+            <a href="#" id="click-right">&#8594;</a>
+          </div>
+        </div>
+
+        <div class="tl_mm-banner__main-content">
+          <div class="tl_mm-banner__banner-content">
+            <h4>Never <span>.</span> Stop <span>.</span> Exploring</h4>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam quae minima aliquam veniam. Dolor eius veniam molestias animi, dolore deserun.</p>
+          </div>
+        </div>
+    </section>
+    <!-- BANNER SECTION -->
+
+    <!-- SUB STRIPS SECTION -->
+    <section>
+      <div class="tl_mm-banner__sub-own-trips">
+        <div class="tl_mm-banner__sub-own-trips-menu">
+          <div class="tl_mm-banner__sub-own-trips-menu-wrap">
+            <div class="tl_mm-banner__sub-own-item">
+              <p class="tl_mm-banner__plan-yu">Plan Your</p>
+              <h4 class="tl_mm-banner__own-trip">Own Trips</h4>
+            </div>
+            <div class="tl_mm-banner__sub-own-item">
+              <div class="tl_mm-banner__sub-own-item-menu">
+
+                <div class="tl_mm-banner__sub-own-item-menu2">
+                  <div><img src="./images/location.svg" width="20px" alt="location icon"></div>
+                  <div>
+                    <div class="tl_mm-banner__sub-menu-content-head">Travelling to </div>
+                    <div class="tl_mm-banner__sub-menu-content">Any Destination</div>
+                  </div>
+                </div>
+
+                <div><svg xmlns="http://www.w3.org/2000/svg" width="14.201" height="8.115" viewBox="0 0 14.201 8.115">
+                  <path id="expand_more_FILL0_wght300_GRAD-25_opsz48" d="M19.9,25.315l-7.1-7.1.983-1.014L19.9,23.349l6.118-6.118L27,18.246Z" transform="translate(-12.8 -17.2)" fill="#0768b3"/>
+                </svg>
+                </div>
+              </div>
+            </div>
+            <div class="tl_mm-banner__sub-own-item">
+              <div class="tl_mm-banner__sub-own-item-menu">
+                <div class="tl_mm-banner__sub-own-item-menu2">
+                  <div><img src="./images/package.svg" width="25px" alt="location icon"></div>
+                  <div>
+                    <div class="tl_mm-banner__sub-menu-content-head">Choose </div>
+                    <div class="tl_mm-banner__sub-menu-content">Our Packages</div>
+                  </div>
+                </div>
+                <div><svg xmlns="http://www.w3.org/2000/svg" width="14.201" height="8.115" viewBox="0 0 14.201 8.115">
+                  <path id="expand_more_FILL0_wght300_GRAD-25_opsz48" d="M19.9,25.315l-7.1-7.1.983-1.014L19.9,23.349l6.118-6.118L27,18.246Z" transform="translate(-12.8 -17.2)" fill="#0768b3"/>
+                </svg>
+                </div>
+              </div>
+            </div>
+            <div class="tl_mm-banner__sub-own-item">
+          <button class="tl_mm-btn tl_mm-btn--inline">LET'S GO</button>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- SUB STRIPS SECTION -->
+
+    <!-- WELCOME SECTION -->
+     <section class="tl_mm-welcome">
+      <div class="tl_mm-welcome__wrapper">
+      <div class="tl_mm-welcome__row">
+        <div class="tl_mm-welcome__div boxes">
+          <div class="tl_mm-welcome__box one ">
+            <div><img src="./images/sun-umbrella.png" width="40px" alt="sun-umbrella"></div>
+            <div class="tl_mm-welcome__content">
+              <h4>Holiday Packages</h4>
+              <p>Trave memories tour packages</p>
+            </div>
+          </div>
+          <div class="tl_mm-welcome__box two">
+            <div><img src="./images/group.png" width="40px" alt="sun-umbrella"></div>
+            <div class="tl_mm-welcome__content">
+              <h4>Group Tours</h4>
+              <p>Trave memories tour packages</p>
+            </div>
+          </div>
+        </div>
+        <div class="tl_mm-welcome__div center">
+          <img src="./images/welcome-round.jpg" class="welcome-round" alt="welcome image">
+          <img src="./images/baloon.png" class="baloon" alt="baloon">
+          <div class="tl_mm-welcome__center-content">
+            <h4>Welcome to </h4>
+            <h5>Travel Memories</h5>
+          </div>
+        </div>
+        <div class="tl_mm-welcome__div boxes">
+          <div class="tl_mm-welcome__box three">
+            <div><img src="./images/travel.png" width="40px" alt="sun-umbrella"></div>
+            <div class="tl_mm-welcome__content">
+              <h4>Travel Themes</h4>
+              <p>Trave memories tour packages</p>
+            </div>
+          </div>
+          <div class="tl_mm-welcome__box four">
+            <div><img src="./images/ship.png" width="40px" alt="sun-umbrella"></div>
+            <div class="tl_mm-welcome__content">
+              <h4>Cruises</h4>
+              <p>Trave memories tour packages</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+    </section>
+    <!-- WELCOME SECTION -->
+
+    <!-- OUR STORY -->
+    <section class="tl_mm-our-story">
+      <div class="tl_mm-our-story__main">
+          <div class="tl_mm-our-story__leftbaloon"> <img src="./images/baloon.png" width="65px" alt="baloon img"> </div>
+          <div class="tl_mm-our-story__rightbaloon"> <img src="./images/baloon.png" width="40px" alt="baloon img"> </div>
+          
+          <div class="tl_mm-our-story__wrapper container">
+            <div class="tl_mm-our-story__row">
+              <div class="tl_mm-our-story__left">
+                  <div class="tl_mm__short-note">OUR STORY</div>
+                  <div class="tl_mm__title-note">Luxury Tours and Tailor-Made Holidays by Travel Memories</div>
+                  <div class="tl_mm__short-para">
+                    There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable.
+                  </div>
+
+                  <button class="tl_mm-btn tl_mm-btn--inline mt-4">Read More Story</button>
+
+              </div>
+              <div class="tl_mm-our-story__right">
+                <img src="./images/story.jpg" class="tl_mm-our-story__our-story"  width="100%" alt="our story image">
+              </div>
+            </div>
+          </div>
+     </div>
+    </section>
+    <!-- OUR STORY -->
+
+    <!-- HOLIDAY PACKAGES -->
+    <section>
+      <div class="tl_mm-holiday-package mt-5 mb-5">
+        <div class="tl_mm-holiday-package__wrapper">
+          <h3 class="tl_mm__title-head text-center">Our Holiday Packages</h3>
+          <p class="tl_mm__title-sub-head text-center">There are many variations of passages of Lorem Ipsum available</p>
+
+          <div class="tl_mm-holiday-package__row pt-5">
+            <div class="tl_mm-holiday-package__item-wrap">
+              <div class="tl_mm-holiday-package__image-wrap">
+                <img class="tl_mm-holiday-package__item-wrap-img" src="./images/item1.png" alt="package image">
+              </div>
+              <div class="tl_mm-holiday-package__content">
+              <div class="tl_mm-holiday-package__label blue">
+                INTERNATIONAL
+              </div>
+              <h4>8 Day Best of Victoria Ultimate Luxury Tour</h4>
+              <div class="d-flex justify-content-between flex-wrap">
+                <div>
+                  <div class="tl_mm-holiday-package__day">4DAYS / 3NIGHTS</div>
+                  <div class="d-flex">
+                    <img src="./images/star.svg" alt="">
+                    <img src="./images/star.svg" alt="">
+                    <img src="./images/star.svg" alt="">
+                    <img src="./images/star.svg" alt="">
+                    <img src="./images/star.svg" alt="">
+                  </div>
+                </div>
+
+                <div>
+                  <div class="tl_mm-holiday-package__amount">AUD $398</div>
+                  <div class="tl_mm-holiday-package__save-money">Save AUD $ 17.25</div>
+                </div>
+
+              </div>
+              </div>
+            </div>
+            
+            <div class="tl_mm-holiday-package__item-wrap">
+              <div class="tl_mm-holiday-package__image-wrap">
+                <img class="tl_mm-holiday-package__item-wrap-img" src="./images/item1.png" alt="package image">
+              </div>
+              <div class="tl_mm-holiday-package__content">
+              <div class="tl_mm-holiday-package__label blue">
+                INTERNATIONAL
+              </div>
+              <h4>8 Day Best of Victoria Ultimate Luxury Tour</h4>
+              <div class="d-flex justify-content-between flex-wrap">
+                <div>
+                  <div class="tl_mm-holiday-package__day">4DAYS / 3NIGHTS</div>
+                  <div class="d-flex">
+                    <img src="./images/star.svg" alt="">
+                    <img src="./images/star.svg" alt="">
+                    <img src="./images/star.svg" alt="">
+                    <img src="./images/star.svg" alt="">
+                    <img src="./images/star.svg" alt="">
+                  </div>
+                </div>
+
+                <div>
+                  <div class="tl_mm-holiday-package__amount">AUD $398</div>
+                  <div class="tl_mm-holiday-package__save-money">Save AUD $ 17.25</div>
+                </div>
+
+              </div>
+              </div>
+            </div>
+
+            <div class="tl_mm-holiday-package__item-wrap">
+              <div class="tl_mm-holiday-package__image-wrap">
+                <img class="tl_mm-holiday-package__item-wrap-img" src="./images/item1.png" alt="package image">
+              </div>
+              <div class="tl_mm-holiday-package__content">
+              <div class="tl_mm-holiday-package__label blue">
+                INTERNATIONAL
+              </div>
+              <h4>8 Day Best of Victoria Ultimate Luxury Tour</h4>
+              <div class="d-flex justify-content-between flex-wrap">
+                <div>
+                  <div class="tl_mm-holiday-package__day">4DAYS / 3NIGHTS</div>
+                  <div class="d-flex">
+                    <img src="./images/star.svg" alt="">
+                    <img src="./images/star.svg" alt="">
+                    <img src="./images/star.svg" alt="">
+                    <img src="./images/star.svg" alt="">
+                    <img src="./images/star.svg" alt="">
+                  </div>
+                </div>
+
+                <div>
+                  <div class="tl_mm-holiday-package__amount">AUD $398</div>
+                  <div class="tl_mm-holiday-package__save-money">Save AUD $ 17.25</div>
+                </div>
+
+              </div>
+              </div>
+            </div>
+
+            <div class="tl_mm-holiday-package__item-wrap">
+              <div class="tl_mm-holiday-package__image-wrap">
+                <img class="tl_mm-holiday-package__item-wrap-img" src="./images/item1.png" alt="package image">
+              </div>
+              <div class="tl_mm-holiday-package__content">
+              <div class="tl_mm-holiday-package__label blue">
+                INTERNATIONAL
+              </div>
+              <h4>8 Day Best of Victoria Ultimate Luxury Tour</h4>
+              <div class="d-flex justify-content-between flex-wrap">
+                <div>
+                  <div class="tl_mm-holiday-package__day">4DAYS / 3NIGHTS</div>
+                  <div class="d-flex">
+                    <img src="./images/star.svg" alt="">
+                    <img src="./images/star.svg" alt="">
+                    <img src="./images/star.svg" alt="">
+                    <img src="./images/star.svg" alt="">
+                    <img src="./images/star.svg" alt="">
+                  </div>
+                </div>
+
+                <div>
+                  <div class="tl_mm-holiday-package__amount">AUD $398</div>
+                  <div class="tl_mm-holiday-package__save-money">Save AUD $ 17.25</div>
+                </div>
+
+              </div>
+              </div>
+            </div>
+
+            <div class="tl_mm-holiday-package__item-wrap">
+              <div class="tl_mm-holiday-package__image-wrap">
+                <img class="tl_mm-holiday-package__item-wrap-img" src="./images/item1.png" alt="package image">
+              </div>
+              <div class="tl_mm-holiday-package__content">
+              <div class="tl_mm-holiday-package__label blue">
+                INTERNATIONAL
+              </div>
+              <h4>8 Day Best of Victoria Ultimate Luxury Tour</h4>
+              <div class="d-flex justify-content-between flex-wrap">
+                <div>
+                  <div class="tl_mm-holiday-package__day">4DAYS / 3NIGHTS</div>
+                  <div class="d-flex">
+                    <img src="./images/star.svg" alt="">
+                    <img src="./images/star.svg" alt="">
+                    <img src="./images/star.svg" alt="">
+                    <img src="./images/star.svg" alt="">
+                    <img src="./images/star.svg" alt="">
+                  </div>
+                </div>
+
+                <div>
+                  <div class="tl_mm-holiday-package__amount">AUD $398</div>
+                  <div class="tl_mm-holiday-package__save-money">Save AUD $ 17.25</div>
+                </div>
+
+              </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- HOLIDAY PACKAGES -->
+
+    <!-- OUR TRAVEL TIPS -->
+    <section>
+      <div class="tl_mm-travel-story">
+        <div class="tl_mm-travel-story__wrapper">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-6 col-sm-12 col-lg-6">
+                <div class="tl_mm-travel-story__label green ">
+                  OUR TRAVEL TIPS
+                </div>
+                <div class="tl_mm-travel-story__left-content pt-3">
+                  There are many </br> variations of passages of </br> Lorem Ipsum available
+                </div>
+              </div>
+              <div class="col-md-6 col-sm-12 col-lg-6">
+                <div class="tl_mm-travel-story__right-content pt-5">
+                  There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- OUR TRAVEL TIPS -->
+
+    <!-- OUR GROUP TOUR -->
+    <section>
+      <div class="tl_mm-grouup-tour pt-5 pb-5">
+      <div class="tl_mm-grouup-tour__wrapper">
+        <div class="pb-5">
+          <h3 class="tl_mm__title-head text-center">Our Group Tours</h3>
+          <p class="tl_mm__title-sub-head text-center">There are many variations of passages of Lorem Ipsum available</p>
+  
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 col-sm-12 col-md-6 mt-2 mb-2">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="tl_mm-group-tour__item-wrap">
+                    <div class="tl_mm-group-tour__image-wrap">
+                      <img class="tl_mm-holiday-package__item-wrap-img" src="./images/item1.png" alt="package image">
+                    </div>
+                    <div class="tl_mm-group-tour__content">
+                      <div class="tl_mm-group-tour__day text-center">7 NIGHT</div>
+                    <h4 class="tl_mm-group-tour__weekend">WEEKEND GETAWAYS</h4>
+                    <div class="tl_mm-holiday-package__save-money text-center">STARTING FROM</div>
+                    <div class="tl_mm-group-tour__amount text-center">AUD $398</div>
+                      <button class="tl_mm-btn tl_mm-btn--inline mt-4 text-center">Read More</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="tl_mm-group-tour__item-wrap">
+                    <div class="tl_mm-group-tour__image-wrap">
+                      <img class="tl_mm-holiday-package__item-wrap-img" src="./images/item1.png" alt="package image">
+                    </div>
+                    <div class="tl_mm-group-tour__content">
+                      <div class="tl_mm-group-tour__day text-center">7 NIGHT</div>
+                    <h4 class="tl_mm-group-tour__weekend">WEEKEND GETAWAYS</h4>
+                    <div class="tl_mm-holiday-package__save-money text-center">STARTING FROM</div>
+                    <div class="tl_mm-group-tour__amount text-center">AUD $398</div>
+                      <button class="tl_mm-btn tl_mm-btn--inline mt-4 text-center">Read More</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-sm-12 col-md-6 mt-2 mb-2">
+              <div class="tl_mm-group-tour__item-wrap">
+                <div class="tl_mm-group-tour__image-wrap">
+                  <img class="tl_mm-holiday-package__item-wrap-img" src="./images/item1.png" alt="package image">
+                </div>
+                <div class="tl_mm-group-tour__content">
+                  <div class="tl_mm-group-tour__day text-center">7 NIGHT</div>
+                  <h4 class="tl_mm-group-tour__weekend">WEEKEND GETAWAYS</h4>
+                  <div class="tl_mm-holiday-package__save-money text-center">STARTING FROM</div>
+                  <div class="tl_mm-group-tour__amount text-center">AUD $398</div>
+                  <button class="tl_mm-btn tl_mm-btn--inline mt-4 text-center">Read More</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-6 col-sm-12 col-md-6 mt-2 mb-2">
+              <div class="tl_mm-group-tour__item-wrap">
+                <div class="tl_mm-group-tour__image-wrap">
+                  <img class="tl_mm-holiday-package__item-wrap-img" src="./images/item1.png" alt="package image">
+                </div>
+                <div class="tl_mm-group-tour__content">
+                  <div class="tl_mm-group-tour__day text-center">7 NIGHT</div>
+                  <h4 class="tl_mm-group-tour__weekend">WEEKEND GETAWAYS</h4>
+                  <div class="tl_mm-holiday-package__save-money text-center">STARTING FROM</div>
+                  <div class="tl_mm-group-tour__amount text-center">AUD $398</div>
+                  <button class="tl_mm-btn tl_mm-btn--inline mt-4 text-center">Read More</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-sm-12 col-md-6 mt-2 mb-2">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="tl_mm-group-tour__item-wrap">
+                    <div class="tl_mm-group-tour__image-wrap">
+                      <img class="tl_mm-holiday-package__item-wrap-img" src="./images/item1.png" alt="package image">
+                    </div>
+                    <div class="tl_mm-group-tour__content">
+                      <div class="tl_mm-group-tour__day text-center">7 NIGHT</div>
+                    <h4 class="tl_mm-group-tour__weekend">WEEKEND GETAWAYS</h4>
+                    <div class="tl_mm-holiday-package__save-money text-center">STARTING FROM</div>
+                    <div class="tl_mm-group-tour__amount text-center">AUD $398</div>
+                      <button class="tl_mm-btn tl_mm-btn--inline mt-4 text-center">Read More</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="tl_mm-group-tour__item-wrap">
+                    <div class="tl_mm-group-tour__image-wrap">
+                      <img class="tl_mm-holiday-package__item-wrap-img" src="./images/item1.png" alt="package image">
+                    </div>
+                    <div class="tl_mm-group-tour__content">
+                      <div class="tl_mm-group-tour__day text-center">7 NIGHT</div>
+                    <h4 class="tl_mm-group-tour__weekend">WEEKEND GETAWAYS</h4>
+                    <div class="tl_mm-holiday-package__save-money text-center">STARTING FROM</div>
+                    <div class="tl_mm-group-tour__amount text-center">AUD $398</div>
+                      <button class="tl_mm-btn tl_mm-btn--inline mt-4 text-center">Read More</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      </div>
+    </section>
+    <!-- OUR GROUP TOUR -->
+
+    <!-- TL MM CONTENTS -->
+    <section class="tl_mm-travel-memo">
+      <div class="tl_mm-travel-memo__wrapper">
+        <div class="container">
+          <div class="pt-4 pb-4">
+            <h3 class="tl_mm__short-head">Luxury Tours and Tailor-Made Holidays by Travel Memories</h3>
+            <p class="tl_mm__short-content mt-3">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable.</p>
+            <p class="tl_mm__short-content mt-3">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable.</p>
+          </div>
+          <div class="pt-4 pb-4">
+            <h3 class="tl_mm__short-head">Luxury Tours and Tailor-Made Holidays by Travel Memories</h3>
+            <p class="tl_mm__short-content mt-3">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable.</p>
+          </div>
+          <div class="pt-4 pb-4">
+            <h3 class="tl_mm__short-head">Luxury Tours and Tailor-Made Holidays by Travel Memories</h3>
+            <p class="tl_mm__short-content mt-3">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- TL MM CONTENTS -->
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="tl_mm-footer">
+        <div class="tl_mm-footer__wrapper container">
+          <div class="row">
+            <div class="col-md-6 col-lg-3 col-sm-12">
+              <h3>Holiday Packages</h3>
+              <h3>Group Tours</h3>
+              <h3>Experiences Packages</h3>
+              <h3>Cruises Memberships</h3>
+              <h3>Plan Your Own Trip</h3>
+              <h3>Testimonials</h3>
+              <h3>Hot deals</h3>
+              <h3>Customise Packages</h3>
+              <h3>Blog </h3>
+              <h3>Contact us </h3>
+            </div>
+            <div class="col-md-6 col-lg-3 col-sm-12">
+              <h3>Holiday Packages</h3>
+              <h3>Group Tours</h3>
+              <h3>Experiences Packages</h3>
+              <h3>Cruises Memberships</h3>
+              <h3>Plan Your Own Trip</h3>
+              <h3>Testimonials</h3>
+              <h3>Hot deals</h3>
+              <h3>Customise Packages</h3>
+              <h3>Blog </h3>
+              <h3>Contact us </h3>
+            </div>
+            <div class="col-md-6 col-lg-3 col-sm-12">
+              <h3>Travel Memories</h3>
+              <h3>People’s Park Complex 1 Park Road, </h3>
+              <h3>#04-61/61A, Singapore 059108</h3>
+              <div class="mt-5">
+                <h3>Email</h3>
+                <h3>info@travelmemories.com</h3>
+              </div>
+              <div class="mt-5">
+                <h3>Our Social</h3>
+                <div class="d-flex flex-wrap">
+                  <div class="tl_mm-footer__social-icon"><img src="./images/icon.svg" alt="social icons"></div>
+                  <div class="tl_mm-footer__social-icon"><img src="./images/icon.svg" alt="social icons"></div>
+                  <div class="tl_mm-footer__social-icon"><img src="./images/icon.svg" alt="social icons"></div>
+                  <div class="tl_mm-footer__social-icon"><img src="./images/icon.svg" alt="social icons"></div>
+                  <div class="tl_mm-footer__social-icon"><img src="./images/icon.svg" alt="social icons"></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-lg-3 col-sm-12">
+              <div class="tl_mm-footer__call-div">
+                <div class="tl_mm-footer__icon"><img src="./images/call.svg" alt="call icon" width="25px"></div>
+                <div>
+                  <h5>Contact now</h5>
+                  <h2> (65) 012 345 6789</h2>
+                </div>
+              </div>
+
+              <div class="tl_mm-footer__call-div mt-5 pb-5">
+                <div class="tl_mm-footer__icon"><img src="./images/whatsapp.svg" alt="call icon" width="25px"></div>
+                <div>
+                  <h5>Contact now</h5>
+                  <h2> (65) 012 345 6789</h2>
+                </div>
+              </div>
+
+              <h3 class="mt-5"> Accepted Payments </h3>
+              <img src="./images/visa-mastercard-paypal.png" class="img-fluid" width="100%" alt="mastercard">
+            </div>
+          </div>
+        </div>
+        <div class="container pb-3">
+          <div class="row justify-content-between">
+            <div class="col-md-6 col-lg-6 col-sm-12">
+              <h3>Copyright © 2022 Travel Memories. All Rights Reserved.</h3>
+            </div>
+            <div class="col-md-6 col-lg-6 col-sm-12 text-right">
+              <h3 class="text-right">Designed By: Intersmart</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- FOOTER -->
+
+
+    <!-- You need this element to prevent the content of the page from jumping up -->
+    <!-- <div class="tl_mm-header-placeholder"></div> -->
+
+    <!-- The content of your page would go here. -->
+  </body>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script src="./js/script.js"></script>
+</html>

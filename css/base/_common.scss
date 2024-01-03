@@ -1,0 +1,59 @@
+.container {
+    max-width: 80%;
+}
+.tl_mm {
+    &__short-note {
+        color: $primary-text;
+        font-size: 17px;
+        font-weight: 600;
+    }
+    &__title-note {
+        color: $secondary-blue;
+        font-size: 36px;
+        font-family: $secondary-font;
+        margin: 10px 0;
+    }
+    &__short-para {
+        font-size: 16px;
+        color: $primary-color2;
+        line-height : 30px
+    }
+    &__short-head{
+        color: $secondary-blue;
+        font-size: 16px;
+        font-weight: 600;
+    }
+    &__short-content{
+        font-size: 14px;
+        color: $secondary-color;
+    }
+
+    &__title-head{
+        color: $secondary-blue;
+        font-size: 25px;
+        font-weight: 600;
+    }
+
+    &__title-sub-head {
+        color: $primary-text-3;
+        font-size: 15px;
+        font-weight: 400;
+    }
+}
+
+@include tablet {
+    .tl_mm {
+        &__short-note {
+            font-size: 12px;
+
+        }
+        &__title-note {
+            font-size: 26px;
+            margin: 10px 0;
+        }
+        &__short-para {
+            font-size: 14px;
+            line-height : 20px
+        }
+    }
+}

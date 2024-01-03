@@ -1,0 +1,701 @@
+@import "./abstracts/variable";
+@import "./abstracts/mixins/breakpoints";
+
+// HEADER
+
+.tl_mm-header {
+    &__mobile-view {
+        display: none;
+    }
+    &__sub-mobile-menu {
+        display: none;
+    }
+    &__desktop-view {
+        display: block;
+    }
+    &__top-head {
+        text-align: center;
+        padding: 5px;
+        width: 100%;
+        color: $white;
+        font-size: 13px;
+        background-image: linear-gradient(to right, #034d85, #0070a4, #0093ac, #00b39e, #47cf82);
+    }
+    &__main-head {
+        background-color: transparent;
+        padding: 20px 40px;
+        height: 80px;
+        box-sizing: border-box;
+        transition: top 0.3s;
+        width: 100%;
+        position: absolute;
+    }
+    &__menu-logo {
+        margin-right: 40px;
+    }
+    &__main-menu {
+        text-align: center;
+        margin: 0px auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: relative;
+    }
+
+    &__menu-icon {
+        position: absolute;
+        top: 15px;
+    }
+    &__last-btn {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        border-left: 1px solid $hash-line;
+    }
+
+    &__logo {
+        width: 130px;
+    }
+
+    &__menu-name {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+    }
+    &--mobile-menu-name {
+        flex-direction: column;
+        background-color: $white;
+        position: absolute;
+        width: 100%;
+        z-index: 999;
+        left: 0;
+    }
+
+    &__menu-title {
+        position: relative;
+        p {
+            font-family: $primary-font;
+            margin: 0 0px;
+            color: $primary-color;
+            font-weight: 500;
+            font-size: 14px;
+            display: flex;
+            align-items: center;
+            gap: 3px;
+            cursor: pointer;
+            padding: 23px 10px;
+            // white-space: nowrap;
+            span {
+                display: flex;
+                margin-right: 17px;
+            }
+
+            &:hover {
+                color: $secondary-blue;
+            }
+        }
+    }
+    .color-logo {
+        display: none;
+    }
+
+    &.header-active {
+        .color-logo {
+            display: block;
+        }
+        .uncolor-logo {
+            display: none;
+        }
+    }
+}
+
+/* Fixed version of the header */
+body.fixed .tl_mm-header {
+    padding: 10px 40px;
+    height: 80px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    background-color: $white;
+    color: $black;
+    &__menu-title {
+        p {
+            color: $black;
+        }
+    }
+}
+
+body.fixed .tl_mm-header-placeholder {
+    display: block;
+}
+// HEADER
+// BANNER
+.tl_mm-banner {
+    &__main-wrap {
+        img {
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+
+    &__slider {
+        position: relative;
+        width: 100%;
+        margin: auto;
+        height: 500px;
+        overflow: hidden;
+    }
+    &__controls {
+        position: absolute;
+        bottom: 21%;
+        right: 5%;
+
+        z-index: 9999;
+        a {
+            color: $white;
+            font-size: 20px;
+        }
+    }
+
+    &__slide {
+        position: absolute;
+        z-index: 0;
+        left: 0;
+        top: 0;
+        &.active {
+            transform: translateX(0%) translateZ(0);
+            transition: 0.5s all cubic-bezier(0.4, 0, 0.2, 1);
+            z-index: 100;
+        }
+
+        &.prev {
+            transform: translateX(-100%) translateZ(0);
+            transition: 0.5s all cubic-bezier(0.4, 0, 0.2, 1);
+            z-index: 90;
+        }
+
+        &.next {
+            transform: translateX(100%) translateZ(0);
+            transition: 0.5s all cubic-bezier(0.4, 0, 0.2, 1);
+            z-index: 90;
+        }
+    }
+
+    &__main-content {
+        position: absolute;
+        top: 44%;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        width: 100%;
+        color: $white;
+        z-index: 111;
+    }
+
+    &__banner-content {
+        width: 551px;
+        max-width: 100%;
+        margin: 0 auto;
+        text-align: center;
+        h4 {
+            font-size: 51px;
+            color: $white;
+            font-family: $secondary-font;
+            span {
+                color: #00b39e;
+            }
+        }
+        p {
+            font-size: 13px;
+            color: $white;
+        }
+    }
+
+    &__sub-own-trips {
+        width: 100%;
+        color: $white;
+        z-index: 111;
+        position: absolute;
+    }
+    &__sub-own-trips-menu {
+        margin-top: -46px;
+    }
+    &__plan-yu {
+        font-size: 14px;
+    }
+    &__own-trip {
+        font-size: 23px;
+    }
+    &__sub-own-trips-menu-wrap {
+        border-radius: 10px;
+        display: flex;
+        width: 80%;
+        max-width: 100%;
+        margin: 0 auto;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    }
+
+    &__sub-own-item {
+        padding: 15px 25px;
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        justify-content: center;
+        &:nth-child(1) {
+            width: 22%;
+            border-bottom-left-radius: 10px;
+            border-top-left-radius: 10px;
+            background-image: linear-gradient(to right, #034d85, #0070a4, #0093ac, #00b39e, #47cf82);
+        }
+        &:nth-child(2) {
+            width: 30%;
+            background-color: $white;
+        }
+        &:nth-child(3) {
+            background-color: $white;
+            width: 30%;
+        }
+        &:nth-child(4) {
+            background-color: $white;
+            width: 18%;
+            border-bottom-right-radius: 10px;
+            border-top-right-radius: 10px;
+            display: flex;
+            align-items: flex-end;
+        }
+    }
+    &__sub-menu-content {
+        color: $secondary-blue;
+        font-size: 16px;
+        font-weight: 500;
+    }
+    &__sub-menu-content-head {
+        color: $primary-text;
+        font-size: 13px;
+    }
+    &__sub-own-item-menu2 {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 10px;
+    }
+
+    &__sub-own-item-menu {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+// BANNER
+
+.tl_mm-header-submenu {
+    display: none;
+    position: absolute;
+    top: 50px;
+    &__main-wrap {
+        display: flex;
+        img {
+            width: 800px;
+        }
+    }
+}
+.tl_mm-header-placeholder {
+    height: 80px;
+    display: none;
+    width: 100%;
+    position: absolute;
+}
+// WELCOME
+.tl_mm-welcome {
+    margin-top: 50px;
+    &__wrapper {
+        text-align: center;
+        margin: 0px auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: relative;
+        width: 80%;
+    }
+    &__row {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+    &__div {
+        &.center {
+            border-radius: 50%;
+            object-fit: contain;
+            border: 1px solid #f3f3f3;
+            padding: 23px;
+            flex: 1 1 100%;
+            width: 500px;
+            margin: 0 auto;
+            position: absolute;
+            left: 0;
+            right: 0;
+            .welcome-round {
+                width: 100%;
+                max-width: 100%;
+                border-radius: 50%;
+                height: 450px;
+                width: 544px;
+                object-fit: cover;
+                border: 29px solid #5ebf8812;
+            }
+            .baloon {
+                position: absolute;
+                top: 50px;
+                right: 72px;
+                width: 62px;
+            }
+        }
+        &.boxes {
+            width: 35%;
+            margin-top: 100px;
+        }
+    }
+    &__center-content {
+        position: absolute;
+        top: 30%;
+        left: 18%;
+        color: $white;
+        h4 {
+            font-size: 30px;
+            color: $white;
+            text-align: left;
+            color: #8d8d8d;
+        }
+        h5 {
+            text-align: left;
+            font-size: 30px;
+            color: $white;
+            font-weight: 600;
+        }
+    }
+    &__box {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        width: 100%;
+        gap: 18px;
+        height: 100px;
+        margin-top: 20px;
+        padding: 20px;
+        border-radius: 14px;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        transition: 0.5s;
+        position: relative;
+        z-index: 9;
+        background-image: linear-gradient(to right top, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff);
+        &:hover {
+            transition: 0.5s;
+            color: $white;
+            background-image: linear-gradient(to right, #034d85, #0070a4, #0093ac, #00b39e, #47cf82);
+            h4,
+            p {
+                color: $white;
+            }
+        }
+        &.one {
+            margin-top: 55px;
+        }
+        &.three {
+            margin-top: 55px;
+        }
+        &.two {
+            margin-left: 35px;
+        }
+        &.four {
+            margin-right: 35px;
+        }
+    }
+    &__content {
+        text-align: left;
+        h4 {
+            color: $secondary-blue;
+            font-size: 20px;
+            font-weight: 600;
+            white-space: nowrap;
+        }
+        p {
+            font-size: 10px;
+            color: $primary-text-2;
+            white-space: nowrap;
+            text-transform: uppercase;
+        }
+    }
+}
+
+// WELCOME
+
+// OUR STORY
+.tl_mm-our-story {
+    &__main {
+        margin-top: 160px;
+        position: relative;
+    }
+    &__leftbaloon {
+        position: absolute;
+        left: -24px;
+        top: 50%;
+    }
+    &__rightbaloon {
+        position: absolute;
+        right: 0;
+        top: 10px;
+    }
+    &__wrapper {
+        text-align: center;
+        margin: 0px auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: relative;
+        // width: 80%;
+    }
+    &__row {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        gap: 20px;
+    }
+    &__left {
+        text-align: left;
+        width: 100%;
+        max-width: 50%;
+        margin-top: 66px;
+    }
+    &__right {
+        width: 100%;
+        max-width: 50%;
+    }
+}
+// OUR STORY
+
+// HOLIDAY PACKAGES
+.tl_mm-holiday-package {
+    padding: 50px 0;
+    &__row {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 10px;
+        margin-left: 10px;
+    }
+    &__item-wrap {
+        border-radius: 10px;
+        position: relative;
+        overflow: hidden;
+        width: calc(100% / 4);
+        max-width: 100%;
+    }
+    &__image-wrap {
+        &::before {
+            content: "";
+            width: 100%;
+            height: 100%;
+            background-color: #0000003b;
+            position: absolute;
+            bottom: 11px;
+        }
+    }
+    &__item-wrap-img {
+        width: calc(100%);
+    }
+    &__content {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        padding: 33px;
+    }
+    &__label {
+        padding: 5px 10px;
+        border-radius: 5px;
+        font-size: 10px;
+        color: $white;
+        width: fit-content;
+        &.blue {
+            background-color: $secondary-blue;
+        }
+    }
+    h4 {
+        color: $white;
+        font-size: 18px;
+        font-weight: 500;
+        margin: 5px 0;
+    }
+    &__day {
+        font-size: 13px;
+        color: $secondary-green;
+        margin: 0;
+        font-weight: 400;
+        margin-bottom: 7px;
+    }
+    &__amount {
+        font-size: 20px;
+        color: $white;
+        font-weight: 500;
+    }
+    &__save-money {
+        font-size: 13px;
+        font-weight: 500;
+        color: $secondary-green;
+    }
+}
+// HOLIDAY PACKAGES
+// TRAVEL STORY
+.tl_mm-travel-story {
+    &__wrapper {
+        background-image: url(../images/story.jpg);
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 400px;
+        padding: 100px 0;
+    }
+    &__left-content {
+        font-family: $secondary-font;
+        font-size: 45px;
+        color: $white;
+        line-height: 51px;
+    }
+    &__right-content {
+        font-size: 16px;
+        color: $white;
+        line-height: 31px;
+    }
+    &__label {
+        padding: 5px 10px;
+        border-radius: 5px;
+        font-size: 13px;
+        color: $white;
+        width: fit-content;
+        &.green {
+            background-color: $secondary-green;
+        }
+    }
+}
+// TRAVEL STORY
+// OUR GROUP TOUR
+.tl_mm-group-tour {
+    &__item-wrap {
+        border-radius: 10px;
+        position: relative;
+        overflow: hidden;
+        max-width: 100%;
+        margin: 5px 0;
+    }
+    &__image-wrap {
+        height: 244px;
+        &::before {
+            content: "";
+            width: 100%;
+            height: 100%;
+            background-color: #0000003b;
+            position: absolute;
+            bottom: 0px;
+        }
+    }
+    &__content {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        padding: 23px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 2px;
+    }
+    &__weekend {
+        color: $white;
+        font-size: 15px;
+        font-weight: 700;
+        margin: 5px 0;
+        text-align: center;
+    }
+    &__day {
+        font-size: 13px;
+        color: #5EBF88;
+        margin: 0;
+        font-weight: 400;
+        margin-bottom: 7px;
+    }
+    &__amount {
+        font-size: 18px;
+        color: $white;
+        font-weight: 600;
+    }
+}
+// OUR GROUP TOUR
+// FOOTER
+.tl_mm-footer {
+    background-image: linear-gradient(to right, #034d85, #0070a4, #0093ac, #00b39e, #47cf82);
+
+    &__wrapper {
+        padding: 70px 20px;
+    }
+
+    &__social-icon {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid $white;
+        cursor: pointer;
+        margin-right: 10px;
+        &:active {
+            transform: scale(0.9);
+            transition: 0.5s;
+        }
+    }
+    &__call-div {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 14px;
+        color: $white;
+        flex-wrap: wrap;
+    }
+
+    &__icon {
+        background-color: $white;
+        width: 45px;
+        height: 45px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    h3 {
+        color: $white;
+        margin: 11px 0;
+        cursor: pointer;
+    }
+    h5 {
+        font-size: 15px;
+        color: #ececec;
+    }
+    h2 {
+        font-size: 21px;
+        font-weight: 600;
+    }
+}
+// FOOTER
+
+// TRAVEL MEMO
+.tl_mm-travel-memo {
+    &__wrapper {
+        background-color: $blue1;
+        padding: 40px 20px;
+    }
+}
+// TRAVEL MEMO
